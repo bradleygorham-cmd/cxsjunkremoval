@@ -4,46 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CxS Junk Removal Halifax | Fast & Affordable Pickup</title>
-  <meta name="description" content="Affordable junk removal in Halifax and surrounding areas. Furniture, appliances, cleanouts, yard waste, and more. Fast, friendly service." />
+  <meta name="description" content="CxS Junk Removal Services — fast, friendly junk removal in Halifax and HRM. Furniture, appliances, yard waste, cleanouts and more." />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; background: #f7f7f7; }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #f7f7f7;
-    }
-
-    /* ===== Header ===== */
+    /* Header */
     header {
-      background: #111827; /* clean dark background */
+      background: #111827;
       color: white;
       text-align: center;
       padding: 50px 20px;
     }
-
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .header-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
+    header h1 { font-size: 2rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; margin-bottom: 20px; }
+    .header-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
     .btn {
       display: inline-block;
       background: #10b981;
@@ -54,71 +29,20 @@
       font-weight: bold;
       transition: 0.2s ease;
     }
+    .btn:hover { background: #059669; }
 
-    .btn:hover {
-      background: #059669;
-    }
+    /* Sections */
+    section { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+    h2 { font-size: 2rem; margin-bottom: 15px; text-align: center; color: #111827; }
+    .intro-text { text-align: center; max-width: 750px; margin: 0 auto; font-size: 1.1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 30px; }
+    .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
 
-    /* ===== Sections ===== */
-    section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
+    .card h3 { margin-bottom: 10px; color: #111827; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px; }
+    .step { background: white; padding: 25px; border-left: 5px solid #10b981; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #111827;
-    }
-
-    .intro-text {
-      text-align: center;
-      max-width: 750px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      color: #111827;
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .step {
-      background: white;
-      padding: 25px;
-      border-left: 5px solid #10b981;
-      border-radius: 10px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
-
-    .service-area {
-      text-align: center;
-      font-size: 1.1rem;
-      margin-top: 20px;
-    }
+    .service-area { text-align: center; font-size: 1.1rem; margin-top: 20px; }
 
     .contact-box {
       background: #111827;
@@ -127,36 +51,14 @@
       padding: 50px 20px;
       border-radius: 14px;
     }
+    .contact-box p { font-size: 1.1rem; margin: 15px 0; }
+    footer { text-align: center; padding: 30px 20px; font-size: 0.95rem; color: #555; }
 
-    .contact-box p {
-      font-size: 1.1rem;
-      margin: 15px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    /* ===== Mobile ===== */
     @media (max-width: 600px) {
-      header {
-        padding: 30px 15px;
-      }
-
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-      }
+      header { padding: 30px 15px; }
+      header h1 { font-size: 1.5rem; }
+      header p { font-size: 1rem; }
+      h2 { font-size: 1.6rem; }
     }
   </style>
 </head>
@@ -164,71 +66,51 @@
 
   <!-- ===== Header ===== -->
   <header>
-    <div class="header-content">
-      <h1>CxS Junk Removal</h1>
-      <p>Fast, affordable junk removal in Halifax & surrounding areas</p>
-      <div class="header-buttons">
-        <a class="btn" href="tel:8074077067">Call or Text</a>
-        <a class="btn" href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank">Message Us</a>
-      </div>
+    <h1>CxS Junk Removal Services</h1>
+    <p>Your clutter shouldn’t be your problem — we make junk disappear.</p>
+    <div class="header-buttons">
+      <a class="btn" href="tel:8074077067">Call or Text</a>
+      <a class="btn" href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank">Message Us</a>
     </div>
   </header>
 
-  <!-- ===== Intro Section ===== -->
+  <!-- ===== Intro ===== -->
   <section>
-    <h2>Affordable Junk Removal You Can Count On</h2>
+    <h2>Fast & Friendly Junk Removal in Halifax</h2>
     <p class="intro-text">
-      Need unwanted junk gone without the hassle? We help homeowners, renters, landlords, and businesses clear out old furniture, appliances, garbage, yard waste, and more. Fast service, fair pricing, and no nonsense.
+      At CxS Junk Removal, we pride ourselves on quick, reliable service that gets rid of your unwanted items with minimal hassle. Whether it's a single piece of furniture or a full basement cleanout, we handle every job with professionalism and care.
     </p>
   </section>
 
-  <!-- ===== Services Section ===== -->
+  <!-- ===== What We Take ===== -->
   <section>
-    <h2>Our Services</h2>
+    <h2>What We Take</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Furniture Removal</h3>
-        <p>Couches, dressers, tables, bed frames, chairs, and more.</p>
-      </div>
-      <div class="card">
-        <h3>Appliance Removal</h3>
-        <p>Fridges, stoves, washers, dryers, microwaves, and other bulky items.</p>
-      </div>
-      <div class="card">
-        <h3>Mattress Pickup</h3>
-        <p>Old mattresses and box springs removed quickly and easily.</p>
-      </div>
-      <div class="card">
-        <h3>Garage & Basement Cleanouts</h3>
-        <p>We clear out clutter, junk, and unwanted items from packed spaces.</p>
-      </div>
-      <div class="card">
-        <h3>Yard Waste Removal</h3>
-        <p>Branches, brush, bagged yard waste, and general outdoor cleanup.</p>
-      </div>
-      <div class="card">
-        <h3>General Junk Removal</h3>
-        <p>If it’s in the way and you want it gone, we’ll haul it away.</p>
-      </div>
+      <div class="card"><h3>Furniture & Appliances</h3><p>Couches, beds, dressers, fridges, stoves and more — no heavy lifting for you.</p></div>
+      <div class="card"><h3>Yard Waste</h3><p>Branches, brush, grass clippings, patio debris — we haul it all away.</p></div>
+      <div class="card"><h3>Construction Debris</h3><p>Renovation leftovers like lumber, drywall and concrete — cleaned up fast.</p></div>
+      <div class="card"><h3>Household Cleanouts</h3><p>Attic, garage, basement & estate cleanouts — we make space again.</p></div>
+      <div class="card"><h3>Mattresses & Box Springs</h3><p>Heavy and awkward items are our problem, not yours.</p></div>
+      <div class="card"><h3>General Junk</h3><p>If you don’t want it and it’s not hazardous — we’ll take it.</p></div>
     </div>
   </section>
 
-  <!-- ===== How It Works Section ===== -->
+  <!-- ===== Why Choose Us ===== -->
+  <section>
+    <h2>Why Choose CxS Junk Removal</h2>
+    <div class="intro-text">
+      <p>We offer honest pricing, friendly crews, and fast turnaround on every job — no hidden fees, no games. Our team respects your space, your time and your schedule.</p>
+      <p>Local homeowners and renters rely on us because we show up when we say we will, work efficiently, and leave your space clutter-free.</p>
+    </div>
+  </section>
+
+  <!-- ===== How It Works ===== -->
   <section>
     <h2>How It Works</h2>
     <div class="steps">
-      <div class="step">
-        <h3>1. Contact Us</h3>
-        <p>Call, text, or message us with a description or photo of what you need removed.</p>
-      </div>
-      <div class="step">
-        <h3>2. Get a Quote</h3>
-        <p>We’ll give you a quick, straightforward quote based on the job.</p>
-      </div>
-      <div class="step">
-        <h3>3. We Haul It Away</h3>
-        <p>We show up, load it up, and get the junk out of your way.</p>
-      </div>
+      <div class="step"><h3>1. Contact Us</h3><p>Call, text or message with a photo or description of what needs removing.</p></div>
+      <div class="step"><h3>2. Get an Upfront Quote</h3><p>We’ll give you a clear price before we start — no surprises.</p></div>
+      <div class="step"><h3>3. We Haul It Away</h3><p>Our crew arrives, loads up, and leaves your space clean.</p></div>
     </div>
   </section>
 
@@ -236,23 +118,23 @@
   <section>
     <h2>Service Area</h2>
     <p class="service-area">
-      Proudly serving <strong>Halifax, Dartmouth, Bedford, Sackville, Cole Harbour</strong> and surrounding areas.
+      Proudly serving <strong>Halifax, Dartmouth, Bedford, Sackville, Cole Harbour</strong> and surrounding areas with fast, reliable junk removal.
     </p>
   </section>
 
-  <!-- ===== Contact Box ===== -->
+  <!-- ===== Contact ===== -->
   <section>
     <div class="contact-box">
-      <h2 style="color: white;">Get a Free Quote</h2>
-      <p>Need junk gone? Reach out today for fast, friendly service.</p>
+      <h2 style="color: white;">Get Your Free Quote Today</h2>
+      <p>Call or text to book your junk removal or ask questions — we’re here to help!</p>
       <p><strong>Phone/Text:</strong> <a href="tel:8074077067" style="color:#10b981; text-decoration:none;">8074077067</a></p>
-      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank" style="color:#10b981; text-decoration:none;">Message Us Here</a></p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank" style="color:#10b981; text-decoration:none;">Message Us</a></p>
       <a class="btn" href="tel:8074077067">Call Now</a>
     </div>
   </section>
 
   <footer>
-    &copy; 2026 CxS Junk Removal. All rights reserved.
+    &copy; 2026 CxS Junk Removal Services. All rights reserved.
   </footer>
 
 </body>
