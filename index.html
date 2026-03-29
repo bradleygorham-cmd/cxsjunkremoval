@@ -19,19 +19,27 @@
       background: #f7f7f7;
     }
 
+    /* ===== Header ===== */
     header {
       background: linear-gradient(135deg, #1f2937, #111827);
       color: white;
-      padding: 40px 20px 80px 20px;
       text-align: center;
+      padding: 20px 15px 60px 15px;
     }
 
-    header img {
+    .header-banner {
       width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+      overflow: hidden;
       border-radius: 12px;
       margin-bottom: 20px;
+    }
+
+    .header-banner img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      display: block;
     }
 
     header h1 {
@@ -45,6 +53,13 @@
       margin: 0 auto 25px;
     }
 
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
     .btn {
       display: inline-block;
       background: #10b981;
@@ -53,7 +68,6 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      margin: 8px;
       transition: 0.2s ease;
     }
 
@@ -61,6 +75,7 @@
       background: #059669;
     }
 
+    /* ===== Sections ===== */
     section {
       max-width: 1000px;
       margin: 0 auto;
@@ -141,9 +156,19 @@
       color: #555;
     }
 
+    /* ===== Mobile ===== */
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+        max-width: 90%;
+      }
+
+      .header-banner img {
+        max-height: 250px;
       }
 
       h2 {
@@ -153,18 +178,21 @@
   </style>
 </head>
 <body>
-<header>
-  <div class="header-banner">
-    <img src="header.jpg" alt="Junk Removal Banner">
-  </div>
-  <h1>Junk Removal in Halifax</h1>
-  <p>Fast, affordable junk removal for furniture, appliances, garbage, yard waste, and cleanouts in Halifax and surrounding areas.</p>
-  <div class="header-buttons">
-    <a class="btn" href="tel:8074077067">Call or Text for a Quote</a>
-    <a class="btn" href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank">Message Us on Facebook</a>
-  </div>
-</header>
 
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="header-banner">
+      <img src="header.jpg" alt="Junk Removal Banner">
+    </div>
+    <h1>Junk Removal in Halifax</h1>
+    <p>Fast, affordable junk removal for furniture, appliances, garbage, yard waste, and cleanouts in Halifax and surrounding areas.</p>
+    <div class="header-buttons">
+      <a class="btn" href="tel:8074077067">Call or Text for a Quote</a>
+      <a class="btn" href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank">Message Us on Facebook</a>
+    </div>
+  </header>
+
+  <!-- ===== Intro Section ===== -->
   <section>
     <h2>Affordable Junk Removal You Can Count On</h2>
     <p class="intro-text">
@@ -172,6 +200,7 @@
     </p>
   </section>
 
+  <!-- ===== Services Section ===== -->
   <section>
     <h2>Our Services</h2>
     <div class="grid">
@@ -202,6 +231,7 @@
     </div>
   </section>
 
+  <!-- ===== How It Works Section ===== -->
   <section>
     <h2>How It Works</h2>
     <div class="steps">
@@ -220,6 +250,7 @@
     </div>
   </section>
 
+  <!-- ===== Service Area ===== -->
   <section>
     <h2>Service Area</h2>
     <p class="service-area">
@@ -227,6 +258,7 @@
     </p>
   </section>
 
+  <!-- ===== Contact Box ===== -->
   <section>
     <div class="contact-box">
       <h2 style="color: white;">Get a Free Quote</h2>
