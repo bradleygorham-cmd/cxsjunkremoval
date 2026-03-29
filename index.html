@@ -19,27 +19,36 @@
       background: #f7f7f7;
     }
 
-    /* ===== Header ===== */
+    /* ===== Hero Header ===== */
     header {
-      background: linear-gradient(135deg, #1f2937, #111827);
-      color: white;
+      background: url('header.jpg') no-repeat center center;
+      background-size: cover;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 20px 15px 60px 15px;
-    }
-
-    .header-banner {
-      width: 100%;
-      overflow: hidden;
+      position: relative;
+      color: white;
       border-radius: 12px;
-      margin-bottom: 20px;
+      margin: 20px;
+      overflow: hidden;
     }
 
-    .header-banner img {
-      width: 100%;
-      height: auto;
-      max-height: 400px;
-      object-fit: contain;
-      display: block;
+    /* Dark overlay for text readability */
+    header::before {
+      content: '';
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 0 20px;
     }
 
     header h1 {
@@ -49,8 +58,7 @@
 
     header p {
       font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 25px;
+      margin-bottom: 25px;
     }
 
     .header-buttons {
@@ -158,19 +166,15 @@
 
     /* ===== Mobile ===== */
     @media (max-width: 600px) {
+      header {
+        height: 300px;
+      }
       header h1 {
         font-size: 2rem;
       }
-
       header p {
         font-size: 1rem;
-        max-width: 90%;
       }
-
-      .header-banner img {
-        max-height: 250px;
-      }
-
       h2 {
         font-size: 1.6rem;
       }
@@ -179,16 +183,15 @@
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
+  <!-- ===== Hero Header ===== -->
   <header>
-    <div class="header-banner">
-      <img src="header.jpg" alt="Junk Removal Banner">
-    </div>
-    <h1>Junk Removal in Halifax</h1>
-    <p>Fast, affordable junk removal for furniture, appliances, garbage, yard waste, and cleanouts in Halifax and surrounding areas.</p>
-    <div class="header-buttons">
-      <a class="btn" href="tel:8074077067">Call or Text for a Quote</a>
-      <a class="btn" href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank">Message Us on Facebook</a>
+    <div class="hero-text">
+      <h1>Junk Removal in Halifax</h1>
+      <p>Fast, affordable junk removal for furniture, appliances, garbage, yard waste, and cleanouts in Halifax and surrounding areas.</p>
+      <div class="header-buttons">
+        <a class="btn" href="tel:8074077067">Call or Text for a Quote</a>
+        <a class="btn" href="https://www.facebook.com/CxSJunkRemovalServices/" target="_blank">Message Us on Facebook</a>
+      </div>
     </div>
   </header>
 
